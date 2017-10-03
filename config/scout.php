@@ -73,6 +73,9 @@ return [
     'algolia' => [
         'id' => env('ALGOLIA_APP_ID', ''),
         'secret' => env('ALGOLIA_SECRET', ''),
+        'connectTimeout' => env('ALGOLIA_CONNECT_TIMEOUT', 5),
+        'readTimeout' => env('ALGOLIA_READ_TIMEOUT', 30),
+        'searchTimeout' => env('ALGOLIA_SEARCH_TIMEOUT', 5)
     ],
 
 ];
